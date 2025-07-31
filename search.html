@@ -1,0 +1,387 @@
+<!doctype html>
+<html lang="ar" dir="rtl" data-bs-theme="auto">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Search</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.rtl.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@7.0.0/css/all.min.css">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&family=Amiri:ital,wght@0,400;0,700;1,400;1,700&family=Aref+Ruqaa:wght@400;700&family=Cairo:wght@200..1000&family=Tajawal:wght@200;300;400;500;700;800;900&family=Zain:ital,wght@0,200;0,300;0,400;0,700;0,800;0,900;1,300;1,400&display=swap">
+    <meta name="theme-color" content="#136b60">
+  
+  <link rel="stylesheet" href ="./assets/css/main.css">
+</head>
+
+<body>
+  <div id="primary" class="content-area">
+    <header id="mastheader" class="site-header sticky-top shadow-sd bg-surface">
+    <nav class="navbar navbar-expand-md navbar-dark" aria-label="Fourth navbar example">
+        <div class="container-md">
+            <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
+                <img src ="./assets/img/logo.png" alt="" class="sp-logo" height="50">
+                <!--span class="site-title site-logo">
+                            <span class="logo-sudan">ســـودان</span>
+                            <span class="logo-plus">بلس</span>
+                        </span-->
+            </a> <!-- Toggler Button -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+                aria-controls="offcanvasNavbar" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-start bg-surface" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title fw-bold" id="offcanvasNavbarLabel">
+                        <img src ="./assets/img/logo.png" alt="" class="sp-logo" height="50">
+                    </h5>
+                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close">
+                    </button>
+                </div>
+                <div class="offcanvas-body justify-content-between text-center">
+                    <ul class="navbar-nav mb-2 mb-md-0 site-menu ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">الرئيسية</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="articles.html">المقالات</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">من نحن</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">اتصل بنا</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">قائمة</a>
+                            <ul class="dropdown-menu" id="dropdown-menu">
+                                <li><a class="dropdown-item" href="author.html">الكاتب</a></li>
+                                <li><a class="dropdown-item" href="article.html">المقال</a></li>
+                                <li><a class="dropdown-item" href="archive.html">الأرشيف</a></li>
+                                <li><a class="dropdown-item" href="category.html">التصنيف</a></li>
+                                <li><a class="dropdown-item" href="single.html">المنشور</a></li>
+                                <li><a class="dropdown-item" href="search.html">البحث</a></li>
+                                <li class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="page.html">الصفحة</a></li>
+                                <li><a class="dropdown-item" href="404.html">404</a></li>
+                            </ul>
+                        </li>
+                        <li class="d-md-none nav-item dropdown theme-switcher-container">
+                            <a class="nav-link dropdown-toggle theme-switcher-btn" href="#" aria-expanded="false"
+                                data-bs-toggle="dropdown" aria-label="Toggle theme (auto)">
+                                <i class="bi bi-circle-half theme-icon-active" aria-hidden="true"></i>
+                                <span class="visually-hidden theme-switcher-text">تغيير الوضع</span>
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-end shadow">
+                                <li>
+                                    <button type="button" class="dropdown-item d-flex align-items-center"
+                                        data-bs-theme-value="light" aria-pressed="false">
+                                        <i class="bi bi-sun me-2 opacity-50" aria-hidden="true"></i>
+                                        <span class="theme-style-name">فاتح</span>
+                                        <i class="bi bi-check2 ms-auto d-none" aria-hidden="true"></i>
+                                    </button>
+                                </li>
+                                <li>
+                                    <button type="button" class="dropdown-item d-flex align-items-center"
+                                        data-bs-theme-value="dark" aria-pressed="false">
+                                        <i class="bi bi-moon me-2 opacity-50" aria-hidden="true"></i>
+                                        <span class="theme-style-name">داكن</span>
+                                        <i class="bi bi-check2 ms-auto d-none" aria-hidden="true"></i>
+                                    </button>
+                                </li>
+                                <li>
+                                    <button type="button" class="dropdown-item d-flex align-items-center active"
+                                        data-bs-theme-value="auto" aria-pressed="true">
+                                        <i class="bi bi-circle-half me-2 opacity-50" aria-hidden="true"></i>
+                                        <span class="theme-style-name">تلقائي</span>
+                                        <i class="bi bi-check2 ms-auto d-none" aria-hidden="true"></i>
+                                    </button>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+</header>
+    <main id="main" class="site-main container-md mt-2" role="main">
+      <div class="row gy-3">
+        <div class="col-md-8">
+          <!-- Search Box Section -->
+          <div class="card shadow-sm mb-4 rounded-0">
+            <div class="card-body p-4">
+              <h2 class="card-title text-center mb-4 fw-bold">ابحث في الموقع</h2>
+              <form class="search-form text-center" role="search" dir="rtl">
+                <div class="input-group mb-3">
+                  <input class="form-control rounded-pill  py-2" type="search"
+                    placeholder="ابحث عن أخبار، مقالات، مواضيع ..." aria-label="Search">
+                </div>
+                <button class="btn btn-surface rounded-pill px-4 py-2 search-button" type="submit">بحث</button>
+              </form>
+            </div>
+          </div>
+
+          <!-- Search Results Section -->
+          <div class="search-results-container">
+            <h3 class="mb-3 fw-bold d-flex justify-content-between">
+              <span class="text-light-emphasis">نتائج البحث</span>
+              <span class="badge bg-secondary rounded-pill">10</span>
+            </h3>
+            <div class="list-group rounded-3 shadow-sm gap-2">
+              <!-- Search Result Item  -->
+              <a href="single.html"
+                class="list-group-item list-group-item-action py-3 px-4 border-top rounded-3 mb-2 search-result-item">
+                <div class="d-flex w-100 justify-content-between">
+                  <h5 class="mb-1 fw-semibold link-accent">مثال للمقال - العنوان الأول</h5>
+                  <small class="text-muted">منذ 3 أيام</small>
+                </div>
+                <p class="mb-1">
+                  This is a brief snippet of the search result content. It
+                  provides a quick overview of what the user can expect to find on the linked page.
+                  هذا مقتطف من مكون البحث يظهر محتوى نتيجة البحث.
+                  و يعتبر عرض سريع لما يمكن أن يراه المستخدم
+                </p>
+                <small class="small text-dark-emphasis">تطوير الويب</small>
+              </a>
+
+              <a href="single.html"
+                class="list-group-item list-group-item-action py-3 px-4 border-top rounded-3 mb-2 search-result-item">
+                <div class="d-flex w-100 justify-content-between">
+                  <h5 class="mb-1 fw-semibold link-accent">Another Relevant Post Title</h5>
+                  <small class="text-muted">منذ أسبوع</small>
+                </div>
+                <p class="mb-1">Here's another example of a search result snippet, showcasing
+                  different content types or topics that might appear in the results.</p>
+                <small class="small text-dark-emphasis">Category: Digital Marketing</small>
+              </a>
+
+              <a href="single.html"
+                class="list-group-item list-group-item-action py-3 px-4 border-top rounded-3 mb-2 search-result-item">
+                <div class="d-flex w-100 justify-content-between">
+                  <h5 class="mb-1 fw-semibold link-accent">عرض المنتج: أفضل أسعار 2024</h5>
+                  <small class="text-muted">منذ 5 أشهر</small>
+                </div>
+                <p class="mb-1">
+                  This snippet could be from a product page or a review,
+                  highlighting key features or user testimonials for a specific item.
+                  هذه الفقرة يمكن أن تمثل صفحة منتج أو عرض.
+                  تظهر الميزات الأساسية أو شهادات المستخدم لمنتج محدد.
+                </p>
+                <small class="small text-dark-emphasis">التصنيف: معاينة المنتج</small>
+              </a>
+            </div>
+
+            <!-- No Results Message (initially hidden, shown via JS if no results) -->
+            <div class="card text-center py-4 no-results-message d-else">
+              <p class="mb-0 bg-transparent fs-2">لم يتم العثور على نتائج</p>
+            </div>
+
+          </div>
+        </div>
+        <div class="col-md-4">
+          <aside class="sidebar px-1 px-sm-2 px-md-3">
+    <!-- Sidebar Widget: About -->
+    <div class="card sidebar-widget widget-about shadow-lg mb-2 mb-sm-3" data-bs-theme="light">
+        <div class="card-body text-center">
+            <img src ="./assets/img/thumbnails/80x80.png" class="rounded-circle mb-2" alt="Author Avatar">
+            <h5 class="card-title mb-1">Jane Doe</h5>
+            <p class="card-text text-dark-emphasis small">Content Creator</p>
+            <p class="card-text text-light-emphasis">Passionate about web development and sharing knowledge.</p>
+            <a href="#" class="btn btn-sm btn-secondary">Read More</a>
+        </div>
+    </div>
+
+    <!-- Sidebar Widget: Searchbox -->
+    <div class="card sidebar-widget widget-search mb-2 mb-sm-3">
+        <div class="card-body text-center">
+            <form action="search.html">
+                <div class="input-group">
+                    <input type="search" class="form-control form-control-sm rounded-0" placeholder="بحث"
+                        aria-label="Search">
+                    <button class="btn btn-surface btn-sm rounded-0" type="submit">
+                        <i class="bi bi-search"></i>
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Sidebar Widget: Latest Articles -->
+    <div class="card sidebar-widget widget-articles mb-2 mb-sm-3">
+        <div class="card-header">
+            <h4 class="card-title mb-0">
+                <i class="bi bi-newspaper"></i>
+                <span class="ms-2">آخر المقالات</span>
+            </h4>
+        </div>
+        <div class="list-group list-group-flush">
+            <a href="single.html" class="list-group-item list-group-item-action">
+                <div href="single.html" class="d-flex flex-column flex-sm-row h-100">
+                    <div class="flex-shrink-0 mb-3 mb-sm-0 me-sm-3 d-flex justify-content-center align-items-center align-items-md-start">
+                        <img src ="./assets/img/thumbnails/600x400.png" class="img-fluid img-thumbnail shadow-sm" alt="Post Thumbnail 2">
+                    </div>
+                    <div class="flex-grow-1 text-center text-sm-start">
+                        <h6 class="mb-1 fw-bold">استكشف العمل عن بعد: عصر جديد</h6>
+                        <small class="text-muted">منذ أسبوع</small>
+                    </div>
+                </div>
+            </a>
+            <a href="single.html" class="list-group-item list-group-item-action">
+                <div href="single.html" class="d-flex flex-column flex-sm-row h-100">
+                    <div class="flex-shrink-0 mb-3 mb-sm-0 me-sm-3 d-flex justify-content-center align-items-center align-items-md-start">
+                        <img src ="./assets/img/thumbnails/600x400.png" class="img-fluid img-thumbnail shadow-sm" alt="Post Thumbnail 2">
+                    </div>
+                    <div class="flex-grow-1 text-center text-sm-start">
+                        <h6 class="mb-1 fw-bold">Exploring Remote Work: A New Era</h6>
+                        <small class="text-muted">2 weeks ago</small>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
+
+    <!-- Sidebar Widget: Categories -->
+    <div class="card sidebar-widget widget-categories shadow mb-2 mb-sm-3">
+        <div class="card-header">
+            <h4 class="card-title mb-0">
+                <i class="bi bi-bookmarks-fill"></i>
+                <span class="ms-2">التصنيفات</span>
+            </h4>
+        </div>
+        <ul class="list-group list-group-flush">
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+                <a href="category.html">Web Design</a>
+                <span class="badge bg-surface rounded-pill">4</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-center active">
+                <a href="category.html">Development</a>
+                <span class="badge bg-surface rounded-pill">1</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+                <a href="category.html">Marketing</a>
+                <span class="badge bg-surface rounded-pill">8</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+                <a href="category.html">Tutorials</a>
+                <span class="badge bg-surface rounded-pill">0</span>
+            </li>
+        </ul>
+    </div>
+
+    <!-- Sidebar Widget: Archives -->
+    <div class="card sidebar-widget widget-archive mb-2 mb-sm-3">
+        <div class="card-header">
+            <h4 class="card-title mb-0">
+                <i class="bi bi-folder2"></i>
+                <span class="ms-2">الأرشيف</span>
+            </h4>
+        </div>
+        <ol class="list-group">
+            <li class="list-group-item"><a href="archive.html">مارس 2021</a></li>
+            <li class="list-group-item"><a href="archive.html">شباط 2021</a></li>
+            <li class="list-group-item active"><a href="archive.html">يناير 2021</a></li>
+            <li class="list-group-item"><a href="archive.html">ديسمبر 2020</a></li>
+            <li class="list-group-item"><a href="archive.html">نوفمبر 2020</a></li>
+            <li class="list-group-item"><a href="archive.html">سبتمبر 2020</a></li>
+        </ol>
+    </div>
+
+    <!-- Sidebar Widget: Social Links -->
+    <div class="card sidebar-widget widget-social mb-2 mb-sm-3">
+        <div class="card-body text-center">
+            <h5 class="card-title mb-3">تواصل معنا</h5>
+            <div class="d-flex justify-content-center gap-3">
+                <a href="#" class="fs-3 link-facebook facebook"><i class="bi bi-facebook"></i></a>
+                <a href="#" class="fs-3 link-x twitter-x"><i class="bi bi-twitter-x"></i></a>
+                <a href="#" class="fs-3 link-instagram instagram"><i class="bi bi-instagram"></i></a>
+                <a href="#" class="fs-3 link-youtube youtube"><i class="bi bi-youtube"></i></a>
+                <a href="#" class="fs-3 link-whatsapp whatsapp"><i class="bi bi-whatsapp"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sidebar Widget: Newsletter Subscribe -->
+    <div class="card sidebar-widget widget-newsletter">
+        <div class="card-body text-center">
+            <h5 class="card-title mb-2">انضم إلى نشرتنا الإخبارية</h5>
+            <p class="card-text small text-muted">Stay updated with our latest insights.</p>
+            <form action="">
+                <div class="input-group mb-3">
+                    <input type="email" class="form-control form-control-sm" placeholder="بريدك الإلكتروني"
+                        aria-label="Your email">
+                    <button class="btn btn-sm" type="button">إشتراك</button>
+                </div>
+            </form>
+            <p class="small text-muted mb-0">No spam, we promise!</p>
+        </div>
+    </div>
+
+</aside>
+        </div>
+      </div>
+    </main>
+    <footer class="container-lg d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+        <div class="col-md-4">
+            <span class="site-logo">
+                <span class="logo-sudan">ســـودان</span>
+                <span class="logo-plus">بلس</span>
+            </span>
+            <span class="mb-3 mb-md-0 text-body-secondary">&copy; 2025</span>
+        </div>
+        <div class="credits" dir="ltr">
+            <span class="text-dark-emphasis">Designed By: </span>
+            <a href="https://elhareth.github.io" class="elhareth link-teal fs-5 fo-cairo">
+                Elhareth!
+            </a>
+        </div>
+    </footer>
+    <div class="d-none d-md-inline-block dropdown bd-mode-toggle theme-switcher-container">
+        <button class="btn btn-bd-primary py-2 dropdown-toggle d-flex align-items-center theme-switcher-btn" type="button"
+            aria-expanded="false" data-bs-toggle="dropdown" aria-label="Toggle theme (auto)">
+            <i class="bi bi-circle-half me-1 my-1 theme-icon-active" aria-hidden="true"></i>
+            <span class="visually-hidden theme-switcher-text">تغيير الوضع</span>
+        </button>
+        <ul class="dropdown-menu dropdown-menu-end shadow">
+            <li>
+                <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="light"
+                    aria-pressed="false">
+                    <i class="bi bi-sun me-2 opacity-50" aria-hidden="true"></i>
+                    <span class="theme-style-name">فاتح</span>
+                    <i class="bi bi-check2 ms-auto d-none" aria-hidden="true"></i>
+                </button>
+            </li>
+            <li>
+                <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="dark"
+                    aria-pressed="false">
+                    <i class="bi bi-moon me-2 opacity-50" aria-hidden="true"></i>
+                    <span class="theme-style-name">داكن</span>
+                    <i class="bi bi-check2 ms-auto d-none" aria-hidden="true"></i>
+                </button>
+            </li>
+            <li>
+                <button type="button" class="dropdown-item d-flex align-items-center active" data-bs-theme-value="auto"
+                    aria-pressed="true">
+                    <i class="bi bi-circle-half me-2 opacity-50" aria-hidden="true"></i>
+                    <span class="theme-style-name">تلقائي</span>
+                    <i class="bi bi-check2 ms-auto d-none" aria-hidden="true"></i>
+                </button>
+            </li>
+        </ul>
+    </div>
+
+    <button type="button" class="btn btn-contrast rounded-circle shadow-sm" id="back-to-top">
+        <i class="bi bi-arrow-up fw-bold text-light"></i>
+    </button>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@7.0.0/js/all.min.js"></script>
+<script type="module" src ="./assets/js/main.js"></script>
+</body>
+
+</html>

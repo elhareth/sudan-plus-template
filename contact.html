@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.rtl.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@7.0.0/css/all.min.css">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&family=Amiri:ital,wght@0,400;0,700;1,400;1,700&family=Aref+Ruqaa:wght@400;700&family=Cairo:wght@200..1000&family=Tajawal:wght@200;300;400;500;700;800;900&family=Zain:ital,wght@0,200;0,300;0,400;0,700;0,800;0,900;1,300;1,400&display=swap">
+    <meta name="theme-color" content="#136b60">
+  
+  <link rel="stylesheet" href ="./assets/css/main.css">
+</head>
+
+<body>
+  <div id="primary" class="content-area">
+    <header id="mastheader" class="site-header sticky-top shadow-sd bg-surface">
+    <nav class="navbar navbar-expand-md navbar-dark" aria-label="Fourth navbar example">
+        <div class="container-md">
+            <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
+                <img src ="./assets/img/logo.png" alt="" class="sp-logo" height="50">
+                <!--span class="site-title site-logo">
+                            <span class="logo-sudan">ســـودان</span>
+                            <span class="logo-plus">بلس</span>
+                        </span-->
+            </a> <!-- Toggler Button -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+                aria-controls="offcanvasNavbar" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-start bg-surface" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title fw-bold" id="offcanvasNavbarLabel">
+                        <img src ="./assets/img/logo.png" alt="" class="sp-logo" height="50">
+                    </h5>
+                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close">
+                    </button>
+                </div>
+                <div class="offcanvas-body justify-content-between text-center">
+                    <ul class="navbar-nav mb-2 mb-md-0 site-menu ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">الرئيسية</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="articles.html">المقالات</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">من نحن</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">اتصل بنا</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">قائمة</a>
+                            <ul class="dropdown-menu" id="dropdown-menu">
+                                <li><a class="dropdown-item" href="author.html">الكاتب</a></li>
+                                <li><a class="dropdown-item" href="article.html">المقال</a></li>
+                                <li><a class="dropdown-item" href="archive.html">الأرشيف</a></li>
+                                <li><a class="dropdown-item" href="category.html">التصنيف</a></li>
+                                <li><a class="dropdown-item" href="single.html">المنشور</a></li>
+                                <li><a class="dropdown-item" href="search.html">البحث</a></li>
+                                <li class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="page.html">الصفحة</a></li>
+                                <li><a class="dropdown-item" href="404.html">404</a></li>
+                            </ul>
+                        </li>
+                        <li class="d-md-none nav-item dropdown theme-switcher-container">
+                            <a class="nav-link dropdown-toggle theme-switcher-btn" href="#" aria-expanded="false"
+                                data-bs-toggle="dropdown" aria-label="Toggle theme (auto)">
+                                <i class="bi bi-circle-half theme-icon-active" aria-hidden="true"></i>
+                                <span class="visually-hidden theme-switcher-text">تغيير الوضع</span>
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-end shadow">
+                                <li>
+                                    <button type="button" class="dropdown-item d-flex align-items-center"
+                                        data-bs-theme-value="light" aria-pressed="false">
+                                        <i class="bi bi-sun me-2 opacity-50" aria-hidden="true"></i>
+                                        <span class="theme-style-name">فاتح</span>
+                                        <i class="bi bi-check2 ms-auto d-none" aria-hidden="true"></i>
+                                    </button>
+                                </li>
+                                <li>
+                                    <button type="button" class="dropdown-item d-flex align-items-center"
+                                        data-bs-theme-value="dark" aria-pressed="false">
+                                        <i class="bi bi-moon me-2 opacity-50" aria-hidden="true"></i>
+                                        <span class="theme-style-name">داكن</span>
+                                        <i class="bi bi-check2 ms-auto d-none" aria-hidden="true"></i>
+                                    </button>
+                                </li>
+                                <li>
+                                    <button type="button" class="dropdown-item d-flex align-items-center active"
+                                        data-bs-theme-value="auto" aria-pressed="true">
+                                        <i class="bi bi-circle-half me-2 opacity-50" aria-hidden="true"></i>
+                                        <span class="theme-style-name">تلقائي</span>
+                                        <i class="bi bi-check2 ms-auto d-none" aria-hidden="true"></i>
+                                    </button>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+</header>
+    <main id="main" class="site-main container-md pt-2 text-dark-emphasis" role="main">
+
+      <header
+        class="hero-section bg-surface p-5 text-white text-center d-flex align-items-center justify-content-center">
+        <div class="container">
+          <h1 class="display-3 fw-bold">تواصل معنا</h1>
+          <p class="lead mt-3">نحن هنا للإجابة على استفساراتك وملاحظاتك.</p>
+        </div>
+      </header>
+
+      <section class="py-5">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6 mb-4 mb-lg-0">
+              <h2 class="display-5 fw-bold mb-4">أرسل لنا رسالة</h2>
+              <form>
+                <div class="mb-3">
+                  <label for="name" class="form-label">اسمك</label>
+                  <input type="text" class="form-control" id="name" placeholder="اكتب اسمك هنا" required>
+                </div>
+                <div class="mb-3">
+                  <label for="email" class="form-label">عنوان البريد الإلكتروني</label>
+                  <input type="email" class="form-control" id="email" placeholder="example@yourcompany.com" required>
+                </div>
+                <div class="mb-3">
+                  <label for="subject" class="form-label">الموضوع</label>
+                  <input type="text" class="form-control" id="subject" placeholder="استفسار إخباري / اقتراح / ملاحظة..."
+                    required>
+                </div>
+                <div class="mb-3">
+                  <label for="message" class="form-label">رسالتك</label>
+                  <textarea class="form-control" id="message" rows="6" placeholder="اكتب رسالتك هنا..."
+                    required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary btn-lg">إرسال الرسالة</button>
+              </form>
+            </div>
+            <div class="col-lg-6">
+              <h2 class="display-5 fw-bold mb-4">قنوات التواصل</h2>
+              <p class="lead mb-3"><i class="bi bi-envelope-fill text-primary me-2"></i> للتحرير والاستفسارات الصحفية:
+                <a href="mailto:editor@yournews.com" class="text-decoration-none">editor@sudanplusnews.com</a>
+              </p>
+              <p class="lead mb-5"><i class="bi bi-envelope-fill text-primary me-2"></i> للاستفسارات العامة: <a
+                  href="mailto:info@yournews.com" class="text-decoration-none">info@sudanplusnews.com</a></p>
+
+              <h3 class="fw-bold mt-5 mb-3">تابعنا على منصاتنا الاجتماعية</h3>
+              <p>ابقَ على اطلاع بأحدث الأخبار والتحديثات من خلال صفحاتنا الرسمية:</p>
+              <div class="d-flex flex-wrap gap-3">
+                <a href="#" class="btn btn-outline-primary btn-lg d-flex align-items-center justify-content-between gap-2 w-100">
+                  <span class="platform"><i class="bi bi-facebook fs-4"></i> فيسبوك</span>
+                  <span class="username" dir="ltr">SudanPlus</span>
+                </a>
+                <a href="#" class="btn btn-x btn-lg d-flex align-items-center justify-content-between gap-2 w-100 border-body" style="border-color: var(--bs-dark-border-subtle);">
+                  <span class="platform"><i class="bi bi-twitter-x fs-4"></i> إكس</span>
+                  <span class="username" dir="ltr">@SudanPlus</span>
+                </a>
+                <a href="#" class="btn btn-outline-instagram btn-lg d-flex align-items-center justify-content-between gap-2 w-100">
+                  <span class="platform"><i class="bi bi-instagram fs-4"></i> إنستغرام</span>
+                  <span class="username" dir="ltr">SudanPlus</span>
+                </a>
+                <a href="#" class="btn btn-outline-telegram btn-lg d-flex align-items-center justify-content-between gap-2 w-100">
+                  <span class="platform"><i class="bi bi-telegram fs-4"></i> تلغرام</span>
+                  <span class="username" dir="ltr">SudanPlus</span>
+                </a>
+                <a href="#" class="btn btn-outline-danger btn-lg d-flex align-items-center justify-content-between gap-2 w-100">
+                  <span class="platform"><i class="bi bi-youtube fs-4"></i> يوتيوب</span>
+                  <span class="username" dir="ltr">@SudanPlus</span>
+                </a>
+                <a href="#" class="btn btn-outline-success btn-lg d-flex align-items-center justify-content-between gap-2 w-100">
+                  <span class="platform"><i class="bi bi-whatsapp fs-4"></i> واتساب</span>
+                  <span class="username" dir="ltr">+249 12 345 6789</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="text-center">
+        <div class="container p-3 bg-surface text-white">
+          <h2 class="display-6 fw-bold mb-3">انضم إلى نشرتنا الإخبارية</h2>
+          <p class="lead text-warning">ابقَ على اطلاع دائم بآخر الأخبار عبر البريد.</p>
+          <form action="" class="w-50 w-md-50 mx-auto" data-bs-theme="light">
+            <input type="email" class="form-control mb-2" placeholder="بريدك الإلكتروني"
+              aria-label="Your email">
+            <button class="btn btn-block btn-outline-light rounded-0" type="button">إشتراك</button>
+          </form>
+        </div>
+      </section>
+
+    </main>
+    <footer class="container-lg d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+        <div class="col-md-4">
+            <span class="site-logo">
+                <span class="logo-sudan">ســـودان</span>
+                <span class="logo-plus">بلس</span>
+            </span>
+            <span class="mb-3 mb-md-0 text-body-secondary">&copy; 2025</span>
+        </div>
+        <div class="credits" dir="ltr">
+            <span class="text-dark-emphasis">Designed By: </span>
+            <a href="https://elhareth.github.io" class="elhareth link-teal fs-5 fo-cairo">
+                Elhareth!
+            </a>
+        </div>
+    </footer>
+    <div class="d-none d-md-inline-block dropdown bd-mode-toggle theme-switcher-container">
+        <button class="btn btn-bd-primary py-2 dropdown-toggle d-flex align-items-center theme-switcher-btn" type="button"
+            aria-expanded="false" data-bs-toggle="dropdown" aria-label="Toggle theme (auto)">
+            <i class="bi bi-circle-half me-1 my-1 theme-icon-active" aria-hidden="true"></i>
+            <span class="visually-hidden theme-switcher-text">تغيير الوضع</span>
+        </button>
+        <ul class="dropdown-menu dropdown-menu-end shadow">
+            <li>
+                <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="light"
+                    aria-pressed="false">
+                    <i class="bi bi-sun me-2 opacity-50" aria-hidden="true"></i>
+                    <span class="theme-style-name">فاتح</span>
+                    <i class="bi bi-check2 ms-auto d-none" aria-hidden="true"></i>
+                </button>
+            </li>
+            <li>
+                <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="dark"
+                    aria-pressed="false">
+                    <i class="bi bi-moon me-2 opacity-50" aria-hidden="true"></i>
+                    <span class="theme-style-name">داكن</span>
+                    <i class="bi bi-check2 ms-auto d-none" aria-hidden="true"></i>
+                </button>
+            </li>
+            <li>
+                <button type="button" class="dropdown-item d-flex align-items-center active" data-bs-theme-value="auto"
+                    aria-pressed="true">
+                    <i class="bi bi-circle-half me-2 opacity-50" aria-hidden="true"></i>
+                    <span class="theme-style-name">تلقائي</span>
+                    <i class="bi bi-check2 ms-auto d-none" aria-hidden="true"></i>
+                </button>
+            </li>
+        </ul>
+    </div>
+
+    <button type="button" class="btn btn-contrast rounded-circle shadow-sm" id="back-to-top">
+        <i class="bi bi-arrow-up fw-bold text-light"></i>
+    </button>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@7.0.0/js/all.min.js"></script>
+<script type="module" src ="./assets/js/main.js"></script>
+
+</body>
+
+</html>

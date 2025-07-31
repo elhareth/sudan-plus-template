@@ -1,0 +1,475 @@
+<!doctype html>
+<html lang="ar" dir="rtl" data-bs-theme="auto">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Articles</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.rtl.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@7.0.0/css/all.min.css">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&family=Amiri:ital,wght@0,400;0,700;1,400;1,700&family=Aref+Ruqaa:wght@400;700&family=Cairo:wght@200..1000&family=Tajawal:wght@200;300;400;500;700;800;900&family=Zain:ital,wght@0,200;0,300;0,400;0,700;0,800;0,900;1,300;1,400&display=swap">
+    <meta name="theme-color" content="#136b60">
+  
+  <link rel="stylesheet" href ="./assets/css/main.css">
+</head>
+
+<body>
+  <div id="primary" class="content-area">
+    <header id="mastheader" class="site-header sticky-top shadow-sd bg-surface">
+    <nav class="navbar navbar-expand-md navbar-dark" aria-label="Fourth navbar example">
+        <div class="container-md">
+            <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
+                <img src ="./assets/img/logo.png" alt="" class="sp-logo" height="50">
+                <!--span class="site-title site-logo">
+                            <span class="logo-sudan">ســـودان</span>
+                            <span class="logo-plus">بلس</span>
+                        </span-->
+            </a> <!-- Toggler Button -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+                aria-controls="offcanvasNavbar" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-start bg-surface" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title fw-bold" id="offcanvasNavbarLabel">
+                        <img src ="./assets/img/logo.png" alt="" class="sp-logo" height="50">
+                    </h5>
+                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close">
+                    </button>
+                </div>
+                <div class="offcanvas-body justify-content-between text-center">
+                    <ul class="navbar-nav mb-2 mb-md-0 site-menu ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">الرئيسية</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="articles.html">المقالات</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">من نحن</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">اتصل بنا</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">قائمة</a>
+                            <ul class="dropdown-menu" id="dropdown-menu">
+                                <li><a class="dropdown-item" href="author.html">الكاتب</a></li>
+                                <li><a class="dropdown-item" href="article.html">المقال</a></li>
+                                <li><a class="dropdown-item" href="archive.html">الأرشيف</a></li>
+                                <li><a class="dropdown-item" href="category.html">التصنيف</a></li>
+                                <li><a class="dropdown-item" href="single.html">المنشور</a></li>
+                                <li><a class="dropdown-item" href="search.html">البحث</a></li>
+                                <li class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="page.html">الصفحة</a></li>
+                                <li><a class="dropdown-item" href="404.html">404</a></li>
+                            </ul>
+                        </li>
+                        <li class="d-md-none nav-item dropdown theme-switcher-container">
+                            <a class="nav-link dropdown-toggle theme-switcher-btn" href="#" aria-expanded="false"
+                                data-bs-toggle="dropdown" aria-label="Toggle theme (auto)">
+                                <i class="bi bi-circle-half theme-icon-active" aria-hidden="true"></i>
+                                <span class="visually-hidden theme-switcher-text">تغيير الوضع</span>
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-end shadow">
+                                <li>
+                                    <button type="button" class="dropdown-item d-flex align-items-center"
+                                        data-bs-theme-value="light" aria-pressed="false">
+                                        <i class="bi bi-sun me-2 opacity-50" aria-hidden="true"></i>
+                                        <span class="theme-style-name">فاتح</span>
+                                        <i class="bi bi-check2 ms-auto d-none" aria-hidden="true"></i>
+                                    </button>
+                                </li>
+                                <li>
+                                    <button type="button" class="dropdown-item d-flex align-items-center"
+                                        data-bs-theme-value="dark" aria-pressed="false">
+                                        <i class="bi bi-moon me-2 opacity-50" aria-hidden="true"></i>
+                                        <span class="theme-style-name">داكن</span>
+                                        <i class="bi bi-check2 ms-auto d-none" aria-hidden="true"></i>
+                                    </button>
+                                </li>
+                                <li>
+                                    <button type="button" class="dropdown-item d-flex align-items-center active"
+                                        data-bs-theme-value="auto" aria-pressed="true">
+                                        <i class="bi bi-circle-half me-2 opacity-50" aria-hidden="true"></i>
+                                        <span class="theme-style-name">تلقائي</span>
+                                        <i class="bi bi-check2 ms-auto d-none" aria-hidden="true"></i>
+                                    </button>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+</header>
+
+    <main id="main" class="site-main container-md mt-2" role="main">
+      <div class="row gy-3">
+        <div class="col-md-8">
+          <h3 class="page-title pb-3 mb-3 fst-italic border-bottom text-secondary">
+            المقالات
+          </h3>
+          <!-- Article -->
+          <article class="blog-post p-2 p-sm-3 mb-3 mb-sm-4 mb-md-5 border-start border-accent border-4 rounded-2">
+            <div class="post-image-wrapper mb-3">
+              <img src ="./assets/img/thumbnails/1-2.png" alt="Tech Innovation" class="img-fluid w-100">
+            </div>
+            <div class="post-content text-muted">
+              <h2 class="post-title">
+                <a href="single.html">هذا هو عنوان المقال الأول</a>
+              </h2>
+              <div class="post-meta d-flex flex-column flex-sm-row justify-content-between align-items-start p-2 my-2 border-bottom">
+                <span class="category"><label class="me-1 text-secondary">التصنيف:</label> Technology</span>
+                <span class="author"><label class="me-1 text-secondary">بواسطة:</label> John Smith</span>
+                <time datetime="2025-07-08"><label class="me-1 text-secondary">منذ:</label> July 8, 2025</time>
+              </div>
+              <div class="post-excerpt p-0 p-sm-1">
+                <p>
+                  تعرض مشاركة المدونة هذه بضعة أنواع مختلفة من المحتوى الذي يتم دعمه وتصميمه باستخدام Bootstrap. النصوص
+                  الأساسية، الصور، والأكواد مدعومة بشكل كامل.
+                </p>
+              </div>
+              <a href="single.html" class="read-more btn btn-surface">
+                <span>قراءة المزيد</span>
+              </a>
+            </div>
+          </article>
+
+          <!-- Article -->
+          <article class="blog-post p-2 p-sm-3 mb-3 mb-sm-4 mb-md-5 border-start border-accent border-4 rounded-2">
+            <div class="post-image-wrapper mb-3">
+              <img src ="./assets/img/thumbnails/1-2.png" alt="Tech Innovation" class="img-fluid w-100">
+            </div>
+            <div class="post-content text-muted">
+              <h2 class="post-title">
+                <a href="single.html">عنوان المقال الثاني</a>
+              </h2>
+              <div class="post-meta d-flex flex-column flex-sm-row justify-content-between align-items-start p-2 my-2 border-bottom">
+                <span class="category"><label class="me-1 text-secondary">التصنيف:</label> Technology</span>
+                <span class="author"><label class="me-1 text-secondary">بواسطة:</label> John Smith</span>
+                <time datetime="2025-07-08"><label class="me-1 text-secondary">منذ:</label> July 8, 2025</time>
+              </div>
+              <div class="post-excerpt p-0 p-sm-1">
+                <h3>عنوان فرعي</h3>
+                <p>ألهمت هذه العملية علماء وكالة الفضاء الأمريكية (ناسا) خلال الستينيات من القرن الماضي، لبحث فكرة إطعام
+                  روَّاد الفضاء في مهمات الفضاء الطويلة مثل السفر إلى المريخ. وكانت واحدة من الأفكار الواعدة تصنيع
+                  الغذاء
+                  عن
+                  طريق ثاني أكسيد الكربون الذي ينتجه روَّاد الفضاء، لكن ليس بواسطة النباتات بل عن طريق ميكروبات صغيرة
+                  وحيدة
+                  الخلية قادرة على حصد ثاني أكسيد الكربون لإنتاج كميات وفيرة من البروتين المغذي على شكل مسحوق عديم
+                  النكهة،
+                  كما
+                  يمكن استخدام المادة في صنع الأطعمة المألوفة لدينا.</p>
+                <pre><code>Example code block</code></pre>
+              </div>
+              <a href="#" class="read-more btn btn-surface">
+                <span>قراءة المزيد</span>
+              </a>
+            </div>
+          </article>
+
+          <!-- Article -->
+          <article class="blog-post p-2 p-sm-3 mb-3 mb-sm-4 mb-md-5 border-start border-accent border-4 rounded-2">
+            <div class="post-image-wrapper mb-3">
+              <img src ="./assets/img/thumbnails/1-2.png" alt="Tech Innovation" class="img-fluid w-100">
+            </div>
+            <div class="post-content text-muted">
+              <h2 class="post-title">
+                <a href="single.html">و هنا المقال الثالث، بعنوان أكثر طولا بقليل</a>
+              </h2>
+              <div class="post-meta d-flex flex-column flex-sm-row justify-content-between align-items-start p-2 my-2 border-bottom">
+                <span class="category"><label class="me-1 text-secondary">التصنيف:</label> Technology</span>
+                <span class="author"><label class="me-1 text-secondary">بواسطة:</label> John Smith</span>
+                <time datetime="2025-07-08"><label class="me-1 text-secondary">منذ:</label> July 8, 2025</time>
+              </div>
+              <div class="post-excerpt p-0 p-sm-1">
+                <p>يشكِّل تأمين الغذاء في المستقبل قضية تؤرِّق حكومات العالَم والعلماء على حدٍّ سواء. فخلال القرن
+                  العشرين
+                  ازداد عدد سكان الأرض أربعة أضعاف، وتشير التقديرات إلى أن العدد سوف يصل إلى عشرة مليارات إنسان بحلول
+                  عام
+                  2050م. وسوف تمثل هذه الزيادة الهائلة تحدياً كبيراً وضغطاً متصاعداً على قدرة الإنتاج الزراعي. الأمر
+                  الذي
+                  كان
+                  ولا بد من أن يدفع إلى تطوير تقنيات مبتكرة في تصنيع الغذاء غير الزراعة، منها تقنية مستقبلية تقوم على
+                  تصنيع
+                  الغذاء من الهواء.</p>
+                <blockquote class="blockquote">
+                  <p>تشغل الزراعة مساحات كبيرة من اليابسة، وتستهلك كميات هائلة من المياه، كما أن إنتاج الغذاء بواسطة
+                    الزراعة
+                    يسهم بنسبة عالية من انبعاثات غازات الاحتباس الحراري العالمية</p>
+                </blockquote>
+              </div>
+              <a href="single.html" class="read-more btn btn-surface">
+                <span>قراءة المزيد</span>
+              </a>
+            </div>
+          </article>
+
+          <!-- Article -->
+          <article class="blog-post p-2 p-sm-3 mb-3 mb-sm-4 mb-md-5 border-start border-accent border-4 rounded-2">
+            <div class="post-image-wrapper mb-3">
+              <img src ="./assets/img/thumbnails/1-2.png" alt="Tech Innovation" class="img-fluid w-100">
+            </div>
+            <div class="post-content text-muted">
+              <h2 class="post-title">
+                <a href="single.html">إذا كان الرابع فإن الرابع هو عنوان مميز و رائع و طويل</a>
+              </h2>
+              <div class="post-meta d-flex flex-column flex-sm-row justify-content-between align-items-start p-2 my-2 border-bottom">
+                <span class="category"><label class="me-1 text-secondary">التصنيف:</label> Technology</span>
+                <span class="author"><label class="me-1 text-secondary">بواسطة:</label> John Smith</span>
+                <time datetime="2025-07-08"><label class="me-1 text-secondary">منذ:</label> July 8, 2025</time>
+              </div>
+              <div class="post-excerpt p-0 p-sm-1">
+                <h4>أنواع الغذاء</h4>
+                <p>يتكوَّن الغذاء البشري من ثلاثة أنواع رئيسة، هي:</p>
+                <ul>
+                  <li>البروتينات</li>
+                  <li>الكربوهيدرات</li>
+                  <li>الدهون</li>
+                </ul>
+                <ol>
+                  <li>الكربون</li>
+                  <li>الهيدروجين</li>
+                  <li>الأكسجين</li>
+                  <li>النيتروجين</li>
+                </ol>
+                <blockquote>
+                  <p>تم تصنيع اللحوم بأنواع عديدة</p>
+                </blockquote>
+
+              </div>
+              <a href="single.html" class="read-more btn btn-surface">
+                <span>قراءة المزيد</span>
+              </a>
+            </div>
+          </article>
+
+          <!-- Pagination -->
+          <nav aria-label="Page navigation example" class="container mt-2">
+            <ul class="pagination sp-pagination-youtube pagination-lg pagination-underline justify-content-center">
+              <li class="page-item disabled">
+                <a class="page-link" href="#" aria-label="Previous">
+                  <span>السابق</span>
+                </a>
+              </li>
+              <li class="page-item"><a class="page-link" href="#">1</a></li>
+              <li class="page-item active" aria-current="page"><a class="page-link" href="#">2</a></li>
+              <li class="page-item"><a class="page-link" href="#">3</a></li>
+              <li class="page-item">
+                <a class="page-link" href="#" aria-label="Next">
+                  <span>التالي</span>
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="col-md-4">
+          <aside class="sidebar px-1 px-sm-2 px-md-3">
+    <!-- Sidebar Widget: About -->
+    <div class="card sidebar-widget widget-about shadow-lg mb-2 mb-sm-3" data-bs-theme="light">
+        <div class="card-body text-center">
+            <img src ="./assets/img/thumbnails/80x80.png" class="rounded-circle mb-2" alt="Author Avatar">
+            <h5 class="card-title mb-1">Jane Doe</h5>
+            <p class="card-text text-dark-emphasis small">Content Creator</p>
+            <p class="card-text text-light-emphasis">Passionate about web development and sharing knowledge.</p>
+            <a href="#" class="btn btn-sm btn-secondary">Read More</a>
+        </div>
+    </div>
+
+    <!-- Sidebar Widget: Searchbox -->
+    <div class="card sidebar-widget widget-search mb-2 mb-sm-3">
+        <div class="card-body text-center">
+            <form action="search.html">
+                <div class="input-group">
+                    <input type="search" class="form-control form-control-sm rounded-0" placeholder="بحث"
+                        aria-label="Search">
+                    <button class="btn btn-surface btn-sm rounded-0" type="submit">
+                        <i class="bi bi-search"></i>
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Sidebar Widget: Latest Articles -->
+    <div class="card sidebar-widget widget-articles mb-2 mb-sm-3">
+        <div class="card-header">
+            <h4 class="card-title mb-0">
+                <i class="bi bi-newspaper"></i>
+                <span class="ms-2">آخر المقالات</span>
+            </h4>
+        </div>
+        <div class="list-group list-group-flush">
+            <a href="single.html" class="list-group-item list-group-item-action">
+                <div href="single.html" class="d-flex flex-column flex-sm-row h-100">
+                    <div class="flex-shrink-0 mb-3 mb-sm-0 me-sm-3 d-flex justify-content-center align-items-center align-items-md-start">
+                        <img src ="./assets/img/thumbnails/600x400.png" class="img-fluid img-thumbnail shadow-sm" alt="Post Thumbnail 2">
+                    </div>
+                    <div class="flex-grow-1 text-center text-sm-start">
+                        <h6 class="mb-1 fw-bold">استكشف العمل عن بعد: عصر جديد</h6>
+                        <small class="text-muted">منذ أسبوع</small>
+                    </div>
+                </div>
+            </a>
+            <a href="single.html" class="list-group-item list-group-item-action">
+                <div href="single.html" class="d-flex flex-column flex-sm-row h-100">
+                    <div class="flex-shrink-0 mb-3 mb-sm-0 me-sm-3 d-flex justify-content-center align-items-center align-items-md-start">
+                        <img src ="./assets/img/thumbnails/600x400.png" class="img-fluid img-thumbnail shadow-sm" alt="Post Thumbnail 2">
+                    </div>
+                    <div class="flex-grow-1 text-center text-sm-start">
+                        <h6 class="mb-1 fw-bold">Exploring Remote Work: A New Era</h6>
+                        <small class="text-muted">2 weeks ago</small>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
+
+    <!-- Sidebar Widget: Categories -->
+    <div class="card sidebar-widget widget-categories shadow mb-2 mb-sm-3">
+        <div class="card-header">
+            <h4 class="card-title mb-0">
+                <i class="bi bi-bookmarks-fill"></i>
+                <span class="ms-2">التصنيفات</span>
+            </h4>
+        </div>
+        <ul class="list-group list-group-flush">
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+                <a href="category.html">Web Design</a>
+                <span class="badge bg-surface rounded-pill">4</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-center active">
+                <a href="category.html">Development</a>
+                <span class="badge bg-surface rounded-pill">1</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+                <a href="category.html">Marketing</a>
+                <span class="badge bg-surface rounded-pill">8</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+                <a href="category.html">Tutorials</a>
+                <span class="badge bg-surface rounded-pill">0</span>
+            </li>
+        </ul>
+    </div>
+
+    <!-- Sidebar Widget: Archives -->
+    <div class="card sidebar-widget widget-archive mb-2 mb-sm-3">
+        <div class="card-header">
+            <h4 class="card-title mb-0">
+                <i class="bi bi-folder2"></i>
+                <span class="ms-2">الأرشيف</span>
+            </h4>
+        </div>
+        <ol class="list-group">
+            <li class="list-group-item"><a href="archive.html">مارس 2021</a></li>
+            <li class="list-group-item"><a href="archive.html">شباط 2021</a></li>
+            <li class="list-group-item active"><a href="archive.html">يناير 2021</a></li>
+            <li class="list-group-item"><a href="archive.html">ديسمبر 2020</a></li>
+            <li class="list-group-item"><a href="archive.html">نوفمبر 2020</a></li>
+            <li class="list-group-item"><a href="archive.html">سبتمبر 2020</a></li>
+        </ol>
+    </div>
+
+    <!-- Sidebar Widget: Social Links -->
+    <div class="card sidebar-widget widget-social mb-2 mb-sm-3">
+        <div class="card-body text-center">
+            <h5 class="card-title mb-3">تواصل معنا</h5>
+            <div class="d-flex justify-content-center gap-3">
+                <a href="#" class="fs-3 link-facebook facebook"><i class="bi bi-facebook"></i></a>
+                <a href="#" class="fs-3 link-x twitter-x"><i class="bi bi-twitter-x"></i></a>
+                <a href="#" class="fs-3 link-instagram instagram"><i class="bi bi-instagram"></i></a>
+                <a href="#" class="fs-3 link-youtube youtube"><i class="bi bi-youtube"></i></a>
+                <a href="#" class="fs-3 link-whatsapp whatsapp"><i class="bi bi-whatsapp"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sidebar Widget: Newsletter Subscribe -->
+    <div class="card sidebar-widget widget-newsletter">
+        <div class="card-body text-center">
+            <h5 class="card-title mb-2">انضم إلى نشرتنا الإخبارية</h5>
+            <p class="card-text small text-muted">Stay updated with our latest insights.</p>
+            <form action="">
+                <div class="input-group mb-3">
+                    <input type="email" class="form-control form-control-sm" placeholder="بريدك الإلكتروني"
+                        aria-label="Your email">
+                    <button class="btn btn-sm" type="button">إشتراك</button>
+                </div>
+            </form>
+            <p class="small text-muted mb-0">No spam, we promise!</p>
+        </div>
+    </div>
+
+</aside>
+        </div>
+      </div>
+    </main>
+    <footer class="container-lg d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+        <div class="col-md-4">
+            <span class="site-logo">
+                <span class="logo-sudan">ســـودان</span>
+                <span class="logo-plus">بلس</span>
+            </span>
+            <span class="mb-3 mb-md-0 text-body-secondary">&copy; 2025</span>
+        </div>
+        <div class="credits" dir="ltr">
+            <span class="text-dark-emphasis">Designed By: </span>
+            <a href="https://elhareth.github.io" class="elhareth link-teal fs-5 fo-cairo">
+                Elhareth!
+            </a>
+        </div>
+    </footer>
+    <div class="d-none d-md-inline-block dropdown bd-mode-toggle theme-switcher-container">
+        <button class="btn btn-bd-primary py-2 dropdown-toggle d-flex align-items-center theme-switcher-btn" type="button"
+            aria-expanded="false" data-bs-toggle="dropdown" aria-label="Toggle theme (auto)">
+            <i class="bi bi-circle-half me-1 my-1 theme-icon-active" aria-hidden="true"></i>
+            <span class="visually-hidden theme-switcher-text">تغيير الوضع</span>
+        </button>
+        <ul class="dropdown-menu dropdown-menu-end shadow">
+            <li>
+                <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="light"
+                    aria-pressed="false">
+                    <i class="bi bi-sun me-2 opacity-50" aria-hidden="true"></i>
+                    <span class="theme-style-name">فاتح</span>
+                    <i class="bi bi-check2 ms-auto d-none" aria-hidden="true"></i>
+                </button>
+            </li>
+            <li>
+                <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="dark"
+                    aria-pressed="false">
+                    <i class="bi bi-moon me-2 opacity-50" aria-hidden="true"></i>
+                    <span class="theme-style-name">داكن</span>
+                    <i class="bi bi-check2 ms-auto d-none" aria-hidden="true"></i>
+                </button>
+            </li>
+            <li>
+                <button type="button" class="dropdown-item d-flex align-items-center active" data-bs-theme-value="auto"
+                    aria-pressed="true">
+                    <i class="bi bi-circle-half me-2 opacity-50" aria-hidden="true"></i>
+                    <span class="theme-style-name">تلقائي</span>
+                    <i class="bi bi-check2 ms-auto d-none" aria-hidden="true"></i>
+                </button>
+            </li>
+        </ul>
+    </div>
+
+    <button type="button" class="btn btn-contrast rounded-circle shadow-sm" id="back-to-top">
+        <i class="bi bi-arrow-up fw-bold text-light"></i>
+    </button>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@7.0.0/js/all.min.js"></script>
+<script type="module" src ="./assets/js/main.js"></script>
+</body>
+
+</html>
